@@ -10,6 +10,14 @@ group :development, :test do
   #gem 'rspec-rails', '>= 2.99.0'
   gem 'rspec-rails', '3.8.0'
   gem 'test-unit','~> 3.0'
+  #gem 'guard-rspec', '>= 1.2.1'
+  
+  #gem 'guard-rspec', '4.6.0'
+  #gem 'guard-spork', '1.2.0'
+  
+  #gem 'childprocess', '0.3.6'
+  gem 'spork', '0.9.2'
+
 end
 
 # Gems used only for assets and not required
@@ -28,6 +36,8 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '2.2.0'
+   # gem 'rb-inotify', '>= 0.8.8'
+  #gem 'libnotify', '0.5.9'
 end
 
 group :production do
