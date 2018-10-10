@@ -1,15 +1,15 @@
-require 'rails_helper'
-
+#require 'rails_helper'
+require 'spec_helper'
 RSpec.describe "UserPages", :type => :request do
   describe "GET /user_pages" do
     it "works! (now write some real specs)" do
-      get user_pages_index_path
+      get users_new_path
       expect(response).to have_http_status(200)
     end
   end
 end
 
-require 'spec_helper'
+
 
 describe "User pages" do
 
@@ -18,7 +18,7 @@ describe "User pages" do
   describe "signup page" do
     before { visit signup_path }
 
-    it { should have_selector('h1',    text: 'Sign up') }
-    it { should have_selector('title', text: full_title('Sign up')) }
+    it { should has_selector?('h1',    text: 'Sign up') }
+    it { should has_selector?('title', text: full_title('Sign up')) }
   end
 end
